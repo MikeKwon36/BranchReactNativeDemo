@@ -12,6 +12,9 @@ import {
   View
 } from 'react-native';
 
+import branch from 'react-native-branch'
+
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -21,7 +24,35 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
   render() {
+
+    console.log('****KWON**** branch.subscribe called')
+    branch.subscribe(({ error, params }) => {
+      console.log(params)
+      if (error) {
+        console.error('Error from Branch: ' + error)
+        return
+      }
+
+      // params will never be null if error is null
+      console.log(params)
+
+      // Route non-Branch URL if appropriate.
+      if (params['+non_branch_link']) {
+        const nonBranchUrl = params['+non_branch_link']
+        return
+      }
+
+      if (!params['+clicked_branch_link']) {
+        // Indicates initialization success and some other conditions.
+        // No link was opened.
+        return
+      }
+
+      // A Branch link was opened... Route link based on data in params.
+    })
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

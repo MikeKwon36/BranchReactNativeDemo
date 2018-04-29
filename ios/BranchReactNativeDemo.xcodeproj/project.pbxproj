@@ -40,6 +40,11 @@
 		A1DA9E840FBE473E9801C9F9 /* libreact-native-branch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B410333644D4B69B75B4115 /* libreact-native-branch.a */; };
 		A35DFFE91F0F4C20B5A99478 /* branch.json in Resources */ = {isa = PBXBuildFile; fileRef = F0B85E8AA7094F50926343BA /* branch.json */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C292814420964D370098C8E4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292814320964D370098C8E4 /* iAd.framework */; };
+		C292814620964D570098C8E4 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292814520964D560098C8E4 /* CoreSpotlight.framework */; };
+		C292814820964D5D0098C8E4 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292814720964D5D0098C8E4 /* SafariServices.framework */; };
+		C292814A20964D690098C8E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292814920964D690098C8E4 /* Foundation.framework */; };
+		C292814C20964D6F0098C8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292814B20964D6F0098C8E4 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,6 +359,11 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B24F337008B14BBDA84211AB /* RNBranch.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNBranch.xcodeproj; path = "../node_modules/react-native-branch/ios/RNBranch.xcodeproj"; sourceTree = "<group>"; };
+		C292814320964D370098C8E4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C292814520964D560098C8E4 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		C292814720964D5D0098C8E4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		C292814920964D690098C8E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C292814B20964D6F0098C8E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0B85E8AA7094F50926343BA /* branch.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = branch.json; path = ../branch.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -370,6 +380,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C292814C20964D6F0098C8E4 /* UIKit.framework in Frameworks */,
+				C292814A20964D690098C8E4 /* Foundation.framework in Frameworks */,
+				C292814820964D5D0098C8E4 /* SafariServices.framework in Frameworks */,
+				C292814620964D570098C8E4 /* CoreSpotlight.framework in Frameworks */,
+				C292814420964D370098C8E4 /* iAd.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -533,6 +548,11 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C292814B20964D6F0098C8E4 /* UIKit.framework */,
+				C292814920964D690098C8E4 /* Foundation.framework */,
+				C292814720964D5D0098C8E4 /* SafariServices.framework */,
+				C292814520964D560098C8E4 /* CoreSpotlight.framework */,
+				C292814320964D370098C8E4 /* iAd.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 			);
 			name = Frameworks;
