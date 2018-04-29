@@ -41,7 +41,6 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>NSAppTransportSecurity</key>
-	<!--See http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/ -->
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
@@ -51,6 +50,13 @@
 				<true/>
 			</dict>
 		</dict>
+	</dict>
+	<key>branch_key</key>
+	<dict>
+		<key>live</key>
+		<string>key_live_nmuDTgQEuQ2k3LLCb7Tt8gioBBosX7IK</string>
+		<key>test</key>
+		<string>key_test_glsuGgKFtLYj1KOvk4JqYgmasqfzX5N8</string>
 	</dict>
 </dict>
 </plist>
